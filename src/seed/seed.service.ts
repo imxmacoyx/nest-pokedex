@@ -1,9 +1,7 @@
-import { BadRequestException, Injectable, InternalServerErrorException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import axios, { AxiosInstance} from 'axios';
 import { Model, Promise } from 'mongoose';
 import { AxiosAdapter } from 'src/common/adapters/axios.adapter';
-import { CreatePokemonDto } from 'src/pokemon/dto/create-pokemon.dto';
 import { Pokemon } from 'src/pokemon/entities/pokemon.entity';
 import { PokeResponse } from './interfaces/poke-response.interface';
 

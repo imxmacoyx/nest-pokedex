@@ -33,7 +33,7 @@ export class PokemonService {
     return this.pokemonModel.find()
       .limit( limit )
       .skip( offset )
-      .sort( {
+      .sort({
         no: 1 // DESC
       })
       .select('-__v'); // Eliminar columna
